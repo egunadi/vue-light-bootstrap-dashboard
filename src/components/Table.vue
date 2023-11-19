@@ -14,6 +14,13 @@
       </slot>
     </tr>
     </tbody>
+    <tfoot>
+      <slot name="columns">
+        <tr>
+          <th v-for="column in columns" :key="column">{{column}}</th>
+        </tr>
+      </slot>
+    </tfoot>
   </table>
 </template>
 <script>
