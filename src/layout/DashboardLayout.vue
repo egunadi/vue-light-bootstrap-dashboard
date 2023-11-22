@@ -2,6 +2,22 @@
   <div class="wrapper">
     <side-bar>
       <mobile-menu slot="content"></mobile-menu>
+      <sidebar-link to="/admin/correlations">
+        <i class="nc-icon nc-bank"></i>
+        <p>Overview</p>
+      </sidebar-link>
+      <sidebar-link to="/admin/geographic-distribution">
+        <i class="nc-icon nc-map-big"></i>
+        <p>Geographic Distribution</p>
+      </sidebar-link>
+      <sidebar-link to="/admin/trends-over-time">
+        <i class="nc-icon nc-watch-time"></i>
+        <p>Trends Over Time</p>
+      </sidebar-link>
+      <sidebar-link to="/admin/the-data">
+        <i class="nc-icon nc-notes"></i>
+        <p>The Data</p>
+      </sidebar-link>
       <sidebar-link to="/admin/overview">
         <i class="nc-icon nc-chart-pie-35"></i>
         <p>Dashboard</p>
@@ -13,10 +29,6 @@
       <sidebar-link to="/admin/table-list">
         <i class="nc-icon nc-notes"></i>
         <p>Table list</p>
-      </sidebar-link>
-      <sidebar-link to="/admin/the-data">
-        <i class="nc-icon nc-notes"></i>
-        <p>The Data</p>
       </sidebar-link>
       <sidebar-link to="/admin/typography">
         <i class="nc-icon nc-paper-2"></i>

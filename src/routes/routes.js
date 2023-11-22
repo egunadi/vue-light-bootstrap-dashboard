@@ -3,10 +3,13 @@ import DashboardLayout from '../layout/DashboardLayout.vue'
 import NotFound from '../pages/NotFoundPage.vue'
 
 // Admin pages
+import Correlations from 'src/pages/Correlations.vue'
+import GeographicDistribution from 'src/pages/GeographicDistribution.vue'
+import TrendsOverTime from 'src/pages/TrendsOverTime.vue'
+import TheData from 'src/pages/TheData.vue'
 import Overview from 'src/pages/Overview.vue'
 import UserProfile from 'src/pages/UserProfile.vue'
 import TableList from 'src/pages/TableList.vue'
-import TheData from 'src/pages/TheData.vue'
 import Typography from 'src/pages/Typography.vue'
 import Icons from 'src/pages/Icons.vue'
 import Maps from 'src/pages/Maps.vue'
@@ -25,6 +28,26 @@ const routes = [
     redirect: '/admin/overview',
     children: [
       {
+        path: 'correlations',
+        name: 'Overview',
+        component: Overview
+      },
+      {
+        path: 'geographic-distribution',
+        name: 'Geographic Distribution',
+        component: GeographicDistribution
+      },
+      {
+        path: 'trends-over-time',
+        name: 'Trends Over Time',
+        component: TrendsOverTime
+      },
+      {
+        path: 'the-data',
+        name: 'The Data',
+        component: TheData
+      },
+      {
         path: 'overview',
         name: 'Overview',
         component: Overview
@@ -38,11 +61,6 @@ const routes = [
         path: 'table-list',
         name: 'Table List',
         component: TableList
-      },
-      {
-        path: 'the-data',
-        name: 'The Data',
-        component: TheData
       },
       {
         path: 'typography',
